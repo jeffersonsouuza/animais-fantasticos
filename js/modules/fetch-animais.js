@@ -31,7 +31,7 @@ export default function initFetchAnimais() {
         div.append(h3, span);
     }
 
-    fetchAnimais('./animaisapis.json');
+    fetchAnimais('./animaisapi.json');
 }
 
 
