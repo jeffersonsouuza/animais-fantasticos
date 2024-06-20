@@ -1,5 +1,4 @@
-/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-
+import '../style/style.css';
 import initScrollSuave from './modules/scroll-suave.js';
 import initAnimacaoScroll from './modules/animacao-scroll.js';
 import initAccordion from './modules/active-accordion.js';
