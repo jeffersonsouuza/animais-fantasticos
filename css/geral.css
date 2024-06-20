@@ -7,8 +7,8 @@ li,
 dl,
 dt,
 dd {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -53,7 +53,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 0.875 rem;
+  font-size: 0.875rem;
   letter-spacing: 0.1em;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .titulo {
-  font-family: "Playfair Display SC", georgia;
+  font-family: "Playfair Display SC", georgia, monospace;
   font-size: 6rem;
   line-height: 1;
   font-weight: 400;
@@ -78,7 +78,7 @@ body {
 }
 
 .animais p {
-  font-family: Helvetica, Arial;
+  font-family: Helvetica, Arial, monospace;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 .faq-lista dd {
-  font-family: Helvetica, Arial;
+  font-family: Helvetica, Arial, monospace;
   margin-bottom: 5rem;
   margin-left: 30px;
 }
@@ -170,7 +170,7 @@ body {
 
 .dados li {
   margin-bottom: 1rem;
-  font-family: Helvetica, Arial;
+    font-family: Helvetica, Arial, monospace;
 }
 
 .dados li::before {
@@ -224,11 +224,11 @@ body {
   }
 
   .menu {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .copy {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 

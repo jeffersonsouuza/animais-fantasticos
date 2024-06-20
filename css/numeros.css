@@ -13,7 +13,7 @@
 
 .numeros-grid h3 {
   font-size: 2rem;
-  font-family: "Playfair Display SC";
+  font-family: "Playfair Display SC", monospace;
   margin-bottom: 0.5rem;
 }
 
