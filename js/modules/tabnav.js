@@ -21,8 +21,9 @@ export default class TabNav {
 
   init() {
     if (this.tabMenu.length && this.tabConteudo.length) {
+      this.activeTab(0);
       this.addTabNavMenu();
     }
-    this.activeTab(0);
+    return this;
   }
 }
