@@ -1,4 +1,4 @@
-import initAnimaNumeros from './anima-numeros.js';
+import AnimaNumeros from './anima-numeros.js';
 
 export default function initFetchAnimais() {
   const animaisNumeros = document.querySelector('.numeros-grid');
@@ -24,7 +24,8 @@ export default function initFetchAnimais() {
 
       animaisJson.forEach((animal) => createAnimal(animal));
 
-      initAnimaNumeros();
+      const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros', 'ativo');
+      animaNumeros.init();
     } catch (erro) {
       animaisNumeros.textContent = 'Ocorreu um problema ao verificar os dados dos animais';
     }
