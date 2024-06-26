@@ -1,35 +1,36 @@
 import AnimaNumeros from './anima-numeros.js';
 
-export default function initFetchAnimais() {
-  const animaisNumeros = document.querySelector('.numeros-grid');
+export default function fetchAnimais(url, target) {
 
   function createAnimal(animal) {
     const div = document.createElement('div');
-    const h3 = document.createElement('h3');
-    const span = document.createElement('span');
-
     div.classList.add('numero-animal');
-    span.setAttribute('data-numero', '');
-
-    h3.innerText = animal.specie;
-    span.innerText = animal.total;
-
-    animaisNumeros.appendChild(div);
-    div.append(h3, span);
+    div.innerHTML = `<h3>${animal.specie}</h3><span data-numero>${animal.total}</span>`;
+    return div;
   }
-  async function fetchAnimais(url) {
+
+  const numerosGrid = document.querySelector(target);
+  function preencherAnimais(animal) {
+    const divAnimal = createAnimal(animal);
+    numerosGrid.appendChild(divAnimal);
+  }
+
+  function animaAnimaisNumeros() {
+    const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros', 'ativo');
+    animaNumeros.init();
+  }
+
+  async function criarAnimais() {
     try {
       const animaisResponse = await fetch(url);
       const animaisJson = await animaisResponse.json();
 
-      animaisJson.forEach((animal) => createAnimal(animal));
-
-      const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros', 'ativo');
-      animaNumeros.init();
+      animaisJson.forEach((animal) => preencherAnimais(animal));
+      animaAnimaisNumeros();
     } catch (erro) {
-      animaisNumeros.textContent = 'Ocorreu um problema ao verificar os dados dos animais';
+      numerosGrid.textContent = 'Ocorreu um problema ao verificar os dados dos animais';
     }
   }
 
-  fetchAnimais('./animaisapi.json');
+  return criarAnimais();
 }
