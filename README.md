@@ -1,6 +1,6 @@
 # Animais Fantásticos
 
-Este é o projeto **Animais Fantásticos** desenvolvido durante o curso de JavaScript completo da Origamid. O projeto visa demonstrar habilidades em JavaScript, assim como o uso de ferramentas modernas de desenvolvimento web.
+Este é o projeto **Animais Fantásticos** que visa demonstrar habilidades em JavaScript, assim como o uso de ferramentas modernas de desenvolvimento web.
 
 ## Requisitos
 
@@ -44,7 +44,6 @@ npm run build
 - **ESLint**: Ferramenta para análise de código estático a fim de identificar e corrigir problemas.
 - **Babel**: Compilador JavaScript que permite o uso das versões mais recentes da linguagem.
 
-
 ## Contribuição
 
 Sinta-se à vontade para contribuir com este projeto. Você pode abrir issues ou enviar pull requests com melhorias e correções.
@@ -55,4 +54,4 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](./LIC
 
 ---
 
-Desenvolvido por [Jefferson Souza](https://www.linkedin.com/in/ojeffersonsouza) durante o curso de JavaScript completo da Origamid.
+Desenvolvido por [Jefferson Souza](https://www.linkedin.com/in/ojeffersonsouza).
