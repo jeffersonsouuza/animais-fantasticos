@@ -2,6 +2,8 @@
 
 Este é o projeto **Animais Fantásticos** que visa demonstrar habilidades em JavaScript, assim como o uso de ferramentas modernas de desenvolvimento web.
 
+Deploy: https://jeffersonsouuza.github.io/animais-fantasticos
+
 ## Requisitos
 
 Para rodar este projeto, você precisará ter instalado o Node.js na sua máquina.
